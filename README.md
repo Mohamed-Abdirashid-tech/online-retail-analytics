@@ -1,372 +1,202 @@
-\# 📊 Online Retail Analytics
+# 📊 Online Retail Analytics
 
+## End-to-End Data Analytics & Customer Segmentation Project
 
+This project demonstrates a complete end-to-end data analytics workflow using the **Online Retail II** dataset. It transforms over **1 million retail transactions** into actionable business insights through data cleaning, exploratory data analysis (EDA), visualization, customer segmentation, and machine learning.
 
-\## End-to-End Data Analytics \& Customer Segmentation Project
+---
 
+## 📌 Project Objectives
 
+- Clean and preprocess raw retail transaction data
+- Perform exploratory data analysis (EDA)
+- Identify sales and customer behavior trends
+- Analyze product and country performance
+- Perform RFM Analysis
+- Segment customers using K-Means Clustering
+- Generate business recommendations
 
-This project presents a complete end-to-end data analytics workflow using the Online Retail II dataset. It demonstrates how raw transactional data can be transformed into actionable business insights through data cleaning, exploratory data analysis (EDA), visualization, RFM analysis, and machine learning-based customer segmentation.
+---
 
+# 📂 Dataset
 
+- **Dataset:** Online Retail II
+- **Rows:** 1,048,576
+- **Type:** Retail Transactions
+- **Source:** Kaggle / UCI Machine Learning Repository
 
-\---
+---
 
+# 🛠 Technologies Used
 
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
-\## 📌 Project Objectives
+---
 
-
-
-\- Clean and prepare a real-world retail dataset.
-
-\- Explore customer purchasing behavior.
-
-\- Analyze sales trends across products, countries, and time.
-
-\- Identify high-value customers using RFM Analysis.
-
-\- Segment customers using K-Means Clustering.
-
-\- Generate business insights and recommendations for decision-making.
-
-
-
-\---
-
-
-
-\## 📂 Dataset
-
-
-
-\*\*Dataset:\*\* Online Retail II
-
-
-
-\*\*Rows:\*\* 1,048,576
-
-
-
-\*\*Columns:\*\*
-
-
-
-\- Invoice
-
-\- StockCode
-
-\- Description
-
-\- Quantity
-
-\- InvoiceDate
-
-\- Price
-
-\- Customer ID
-
-\- Country
-
-
-
-\---
-
-
-
-\## 🛠 Technologies Used
-
-
-
-\- Python
-
-\- Jupyter Notebook
-
-\- Pandas
-
-\- NumPy
-
-\- Matplotlib
-
-\- Scikit-learn
-
-
-
-\---
-
-
-
-\## 📁 Project Structure
-
-
+# 📁 Project Structure
 
 ```text
-
 Online-Retail-Analytics/
 
-│
-
 ├── data/
-
 │   ├── raw/
-
 │   └── processed/
-
 │
-
 ├── notebooks/
-
-│   ├── 01\_Data\_Loading.ipynb
-
-│   ├── 02\_Data\_Cleaning.ipynb
-
-│   ├── 03\_EDA.ipynb
-
-│   ├── 04\_Data\_Visualization.ipynb
-
-│   ├── 05\_RFM\_Analysis.ipynb
-
-│   └── 06\_Customer\_Segmentation.ipynb
-
+│   ├── 01_Data_Loading.ipynb
+│   ├── 02_Data_Cleaning.ipynb
+│   ├── 03_EDA.ipynb
+│   ├── 04_Data_Visualization.ipynb
+│   ├── 05_RFM_Analysis.ipynb
+│   └── 06_Customer_Segmentation.ipynb
 │
-
 ├── reports/
-
 │   └── figures/
-
 │
-
 ├── src/
-
 │
-
 ├── README.md
-
 ├── requirements.txt
-
 ├── LICENSE
-
 └── .gitignore
-
 ```
 
+---
 
+# 📈 Project Workflow
 
-\---
+- Data Loading
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis
+- Professional Data Visualization
+- RFM Analysis
+- Customer Segmentation
+- K-Means Clustering
+- PCA Visualization
+- Business Recommendations
 
+---
 
+# 📊 Key Visualizations
 
-\## 📈 Project Workflow
+## Monthly Revenue Trend
 
+![Monthly Revenue Trend](reports/figures/monthly_revenue_trend.png)
 
+---
 
-1\. Data Loading
+## Top 10 Countries by Revenue
 
-2\. Data Cleaning
+![Top Countries](reports/figures/top_countries.png)
 
-3\. Feature Engineering
+---
 
-4\. Exploratory Data Analysis
+## Top 10 Products by Revenue
 
-5\. Data Visualization
+![Top Products](reports/figures/top_products.png)
 
-6\. RFM Customer Analysis
+---
 
-7\. Customer Segmentation
+## Revenue by Weekday
 
-8\. Machine Learning (K-Means)
+![Weekday Revenue](reports/figures/weekday_revenue.png)
 
-9\. PCA Visualization
+---
 
-10\. Business Recommendations
+## Customer Segmentation using K-Means
 
+![Customer Segmentation](reports/figures/pca_clusters.png)
 
+---
 
-\---
+## Revenue by Customer Segment
 
+![Revenue by Segment](reports/figures/revenue_by_segment.png)
 
+---
 
-\## 📊 Key Analyses
+# 🤖 Machine Learning
 
+The project applies **K-Means Clustering** to segment customers based on the RFM framework.
 
+Features used:
 
-\- Revenue Analysis
+- Recency
+- Frequency
+- Monetary Value
 
-\- Monthly Sales Trends
+Principal Component Analysis (PCA) is used to visualize customer clusters in two dimensions.
 
-\- Country Performance
+---
 
-\- Product Performance
+# 💡 Business Insights
 
-\- Hourly Sales
+- VIP customers generate the highest revenue.
+- Loyal customers purchase frequently and should receive loyalty rewards.
+- Regular customers have growth potential through targeted marketing.
+- At-risk customers should be targeted with retention campaigns.
+- Revenue peaks during the final quarter of the year, indicating strong seasonal demand.
 
-\- Weekday Sales
+---
 
-\- Customer Spending
-
-\- RFM Analysis
-
-\- Customer Segmentation
-
-\- K-Means Clustering
-
-
-
-\---
-
-
-
-\## 🤖 Machine Learning
-
-
-
-The project applies the K-Means clustering algorithm to group customers based on:
-
-
-
-\- Recency
-
-\- Frequency
-
-\- Monetary Value
-
-
-
-Principal Component Analysis (PCA) is used to visualize customer clusters.
-
-
-
-\---
-
-
-
-\## 💡 Business Insights
-
-
-
-\- VIP customers generate the highest revenue and should receive exclusive loyalty benefits.
-
-\- Loyal customers provide consistent long-term value and represent strong upselling opportunities.
-
-\- Regular customers should be encouraged to increase purchase frequency.
-
-\- At-risk customers require targeted retention campaigns.
-
-
-
-\---
-
-
-
-\## 🚀 How to Run
-
-
+# 🚀 How to Run
 
 Clone the repository
 
-
-
 ```bash
-
-git clone https://github.com/YOUR\_USERNAME/online-retail-analytics.git
-
+git clone https://github.com/Mohamed-Abdirashid-tech/online-retail-analytics.git
 ```
 
-
-
-Navigate to the project
-
-
+Move into the project folder
 
 ```bash
-
 cd online-retail-analytics
-
 ```
-
-
 
 Create a virtual environment
 
-
-
 ```bash
-
 python -m venv .venv
-
 ```
 
-
-
-Activate the environment
-
-
+Activate it
 
 Windows
 
-
-
 ```bash
-
-.venv\\Scripts\\activate
-
+.venv\Scripts\activate
 ```
-
-
 
 Install dependencies
 
-
-
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-
-
-Launch Jupyter Lab
-
-
+Launch JupyterLab
 
 ```bash
-
 jupyter lab
-
 ```
 
+---
 
-
-\---
-
-
-
-\## 📄 License
-
-
+# 📄 License
 
 This project is licensed under the MIT License.
 
+---
 
+# 👤 Author
 
-\---
+**Mohamed Abdirashid Mohamud**
 
+**Data & Business Intelligence Analyst**
 
-
-\## 👤 Author
-
-
-
-\*\*Mohamed Abdirashid Mohamud\*\*
-
-
-
-Data \& Business Intelligence Analyst
-
-
-
-Python | SQL | Machine Learning | Business Analytics
-
-
-
+Python • SQL • Machine Learning • Business Analytics
